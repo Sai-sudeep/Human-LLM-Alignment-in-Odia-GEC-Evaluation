@@ -1,78 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Assessing Human-LLM Alignment in Odia Error Evaluation</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 15px;
-    line-height: 1.85;
-    color: #1a1a1a;
-    background: #fafaf8;
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 60px 48px 80px;
-    text-align: justify;
-  }
-  h1 {
-    font-size: 1.9rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 28px;
-    line-height: 1.3;
-  }
-  h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 36px 0 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-  p { margin-bottom: 12px; text-align: justify; }
-  .keywords {
-    font-size: 0.88rem;
-    color: #555;
-    margin-top: 16px;
-  }
-  .keywords span { font-weight: bold; color: #333; }
-  hr { border: none; border-top: 1px solid #ccc; margin: 32px 0; }
-  pre {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 0.8rem;
-    background: #f0ede8;
-    border-left: 3px solid #aaa;
-    padding: 20px 24px;
-    overflow-x: auto;
-    line-height: 1.65;
-    margin: 12px 0;
-    text-align: left;
-  }
-  .footer {
-    text-align: right;
-    margin-top: 52px;
-    font-size: 0.82rem;
-    color: #999;
-    font-style: italic;
-  }
-</style>
-</head>
-<body>
+# Assessing Human-LLM Alignment in the Evaluation of Odia Spelling and Grammatical Errors
 
-<h1>Assessing Human-LLM Alignment in the Evaluation<br>of Odia Spelling and Grammatical Errors</h1>
+## Abstract
 
-<h2>Abstract</h2>
+This study measures how consistently humans and large language models evaluate Odia grammatical error correction outputs. Two LLMs, Sarvam-105B and LLaMA-4-Scout-17B, annotated 50 Odia sentences across five error categories: Script Normalization, Spelling, Grammatical, Code-Mixing, and Correct. Six raters (two human linguists and four LLM judges) scored every annotation on four criteria covering error detection, span quality, category assignment, and correction quality. Inter-annotator agreement was measured using eight metrics covering raw agreement, chance-corrected measures, ordinal reliability, and rank correlation. A system preference analysis further examined which annotator LLM each evaluator preferred per sentence, and whether self-evaluating LLMs showed measurable optimism bias. Results show strong human agreement and moderate to low human–LLM alignment, with self-evaluating LLMs showing consistent positive bias toward their own outputs particularly on correction tasks.
 
-<p>This study measures how consistently humans and large language models evaluate Odia grammatical error correction outputs. Two LLMs, Sarvam-105B and LLaMA-4-Scout-17B, annotated 50 Odia sentences across five error categories: Script Normalization, Spelling, Grammatical, Code-Mixing, and Correct. Six raters (two human linguists and four LLM judges) scored every annotation on four criteria covering error detection, span quality, category assignment, and correction quality. Inter-annotator agreement was measured using eight metrics covering raw agreement, chance-corrected measures, ordinal reliability, and rank correlation. A system preference analysis further examined which annotator LLM each evaluator preferred per sentence, and whether self-evaluating LLMs showed measurable optimism bias. Results show strong human agreement and moderate to low human–LLM alignment, with self-evaluating LLMs showing consistent positive bias toward their own outputs particularly on correction tasks.</p>
+**Keywords:** Odia NLP · Grammatical Error Correction · Inter-Annotator Agreement · LLM-as-Judge · Optimism Bias · IAA Metrics
 
-<p class="keywords"><span>Keywords:</span> &nbsp; Odia NLP &nbsp;&middot;&nbsp; Grammatical Error Correction &nbsp;&middot;&nbsp; Inter-Annotator Agreement &nbsp;&middot;&nbsp; LLM-as-Judge &nbsp;&middot;&nbsp; Optimism Bias &nbsp;&middot;&nbsp; IAA Metrics</p>
+---
 
-<hr>
+## Project Root Folder
 
-<h2>Project Root Folder</h2>
-
-<pre>
+```text
 Project_Root_Folder/
 │
 ├── Analysis_Report.pdf
@@ -178,9 +116,6 @@ Project_Root_Folder/
             ├── NB6_ICC/
             ├── NB7_Correlation/
             └── NB8_System_Preference/
-</pre>
+```
 
-<p class="footer">Sai Sudeep Das</p>
-
-</body>
-</html>
+*Sai Sudeep Das*
