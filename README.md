@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This study measures how consistently humans and large language models evaluate Odia grammatical error correction outputs. Two LLMs, Sarvam-105B and LLaMA-4-Scout-17B, annotated 50 Odia sentences across five error categories: Script Normalization, Spelling, Grammatical, Code-Mixing, and Correct. Six raters (two human linguists and four LLM judges) scored every annotation on four criteria covering error detection, span quality, category assignment, and correction quality. Inter-annotator agreement was measured using eight metrics covering raw agreement, chance-corrected measures, ordinal reliability, and rank correlation. A system preference analysis further examined which annotator LLM each evaluator preferred per sentence, and whether self-evaluating LLMs showed measurable optimism bias. Results show strong human agreement and moderate to low human–LLM alignment, with self-evaluating LLMs showing consistent positive bias toward their own outputs particularly on correction tasks.
+This study measures how consistently humans and large language models evaluate Odia grammatical error correction outputs. Two LLMs, Sarvam-105B and LLaMA-4-Scout-17B, annotated 50 Odia sentences across five error categories: Script Normalization, Spelling, Grammatical, Code-Mixing, and Correct. System prompts were maintained separately for both annotation and evaluation phases to ensure reproducibility of LLM behavior. Six raters (two human linguists and four LLM judges) scored every annotation on four criteria covering error detection, span quality, category assignment, and correction quality. Inter-annotator agreement was measured using eight metrics covering raw agreement, chance-corrected measures, ordinal reliability, and rank correlation. A system preference analysis further examined which annotator LLM each evaluator preferred per sentence, and whether self-evaluating LLMs showed measurable optimism bias. Results show strong human agreement and moderate to low human–LLM alignment, with self-evaluating LLMs showing consistent positive bias toward their own outputs particularly on correction tasks.
 
 **Keywords:** Odia NLP · Grammatical Error Correction · Inter-Annotator Agreement · LLM-as-Judge · Optimism Bias · IAA Metrics
 
@@ -20,6 +20,7 @@ Project_Root_Folder/
 │
 ├── Annotation_Phase/
 │   ├── Input_Data_GEC.xlsx
+│   ├── System_Prompt.txt
 │   ├── Codes/
 │   │   ├── Sarvam.ipynb
 │   │   ├── LLAMA.ipynb
@@ -41,6 +42,7 @@ Project_Root_Folder/
 │
 ├── Evaluation_Phase/
 │   ├── Evaluation_Setup.md
+│   ├── System_Prompt.txt
 │   ├── Master_Eval_Sheet.xlsx
 │   ├── Human/
 │   │   ├── Ashish_Bharat_EvalForm_Part_1 (Responses).xlsx
